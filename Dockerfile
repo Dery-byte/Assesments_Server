@@ -4,7 +4,7 @@ FROM maven:3.8.3-openjdk-17 AS build
 # Set the working directory to /app
 WORKDIR /app
 # Copy the executable JAR file into the container at /app
-COPY --from=build target/exam.jar /app/exam.jar
+#COPY --from=build target/exam.jar /app/exam.jar
 # Expose the port that the application will listen on
 EXPOSE 8080
 # Define the command to run your application when the container starts
